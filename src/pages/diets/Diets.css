@@ -1,0 +1,82 @@
+/* Contenedor principal que ocupa toda la pantalla */
+.main-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+    padding: 20px;
+    overflow-y: auto; /* Permite scroll si es necesario */
+  }
+  
+  /* Cuadro principal */
+  .diets-container {
+    width: 60vw; /* Ajusta el ancho del cuadro */
+    max-width: 900px; /* Máximo tamaño en pantallas grandes */
+    padding: 30px;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.5);
+  }
+  
+  
+  /* Título */
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Botones */
+  .buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: darkorange;
+  }
+  
+  /* Sección de información */
+  .diet-info {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+  }
+  
+  .diet-info h2 {
+    color: orange;
+  }
+  
+  .diet-info ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .diet-info li {
+   width: 100%;
+    background-color: #444;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

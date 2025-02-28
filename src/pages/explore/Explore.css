@@ -1,0 +1,65 @@
+/* Contenedor principal */
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Título principal */
+.explore-title {
+  font-size: 2.5rem;
+  color: white;
+  margin: 20px 0;
+  position: absolute;
+  top: 10px;
+}
+
+/* Sección de las imágenes en 3 columnas */
+.explore-sections {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Cada imagen con su link */
+.explore-item {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.explore-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de elevación */
+.explore-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Capa oscura sobre la imagen con el texto */
+.explore-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-overlay h2 {
+  color: white;
+  font-size: 2rem;
+}

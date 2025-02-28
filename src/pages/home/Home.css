@@ -1,0 +1,129 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-align: center;
+  background-color: #2c2c2c;
+  color: white;
+  min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+  width: 100vw; /* Ocupar todo el ancho */
+  padding: 0; /* Elimina el padding para evitar márgenes extra */
+  margin: 0;
+}
+
+.home-welcome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  padding: 1em;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 100;
+  position: relative;
+  display: block;
+  visibility: visible;
+}
+
+
+
+.home-title:hover {
+  color: #f39c12;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* Sección botones flotantes */
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.home-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Sección motivación */
+/* Sección motivación - Acomoda las imágenes a la mitad de la pantalla */
+.home-motivation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh; /* La sección ocupará la mitad de la pantalla */
+  position: relative; /* Para colocar el texto encima */
+}
+
+.motivation-block {
+  width: 50%;
+  height: 100%;
+  overflow: hidden; /* Asegura que la imagen no se salga */
+}
+
+.motivation-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+
+.motivation-text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.motivation-text h2 {
+  font-size: 2rem;
+}
+
+.motivation-text p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Sección historia */
+.home-history {
+  margin-top: 50px;
+  width: 60%;
+}
+
+.home-history h2 {
+  font-size: 2rem;
+}
+
+.home-history p {
+  font-size: 1.2rem;
+  color: #ddd;
+}

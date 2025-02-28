@@ -1,0 +1,80 @@
+/* Contenedor principal */
+.imc-container {
+    width: 350px;
+    background: #222;
+    color: white;
+    padding: 20px;
+    padding-top: 80px;
+    
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  
+    /* Centrando en pantalla */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Estilo del título */
+  .imc-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f39c12;
+  }
+  
+  /* Grupo de inputs */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ccc;
+  }
+  
+  .input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Botón */
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #f39c12;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #e67e22;
+  }
+  
+  /* Resultado */
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .result h2 {
+    color: #2ecc71;
+  }
+  
+  .result p {
+    font-size: 16px;
+  }
+  

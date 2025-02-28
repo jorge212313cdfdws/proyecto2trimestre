@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 100;
+}
+
+/* Contenedor flexible para distribuir elementos */
+.header-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Espacios iguales para cada sección (33%) */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  flex: 1;
+  text-align: left;
+}
+
+/* Menú de navegación */
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Botón de menú hamburguesa */
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #2c2c2c;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  /* Ocultar el botón de menú cuando el menú está abierto */
+  .menu-btn.hide {
+    display: none;
+  }
+}
