@@ -1,0 +1,18 @@
+.routine-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .routine-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .routine-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Rutina de Fuerza",
+      "image": "https://example.com/fuerza.jpg",
+      "description": "Entrenamiento basado en levantamiento pesado para ganar fuerza."
+    },
+    {
+      "id": 2,
+      "title": "Rutina de Hipertrofia",
+      "image": "https://example.com/hipertrofia.jpg",
+      "description": "Programa diseñado para el crecimiento muscular con repeticiones medias."
+    },
+    {
+      "id": 3,
+      "title": "Rutina de Definición",
+      "image": "https://example.com/definicion.jpg",
+      "description": "Enfoque en quemar grasa y mantener masa muscular."
+    }
+  ]
+  

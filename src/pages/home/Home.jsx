@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import RoutineCard from "../../components/routine-card/RoutineCard";
 import "./Home.css";
-import Gym1 from "../../assets/images/gym1.jpg" 
-import Gym3 from "../../assets/images/gym3.jpg"
-
+import Gym1 from "../../assets/images/gym1.jpg";
+import Gym3 from "../../assets/images/gym3.jpg";
 
 function Home() {
+  const [routines, setRoutines] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/routines.json")
+      .then((response) => response.json())
+      .then((data) => setRoutines(data))
+      .catch((error) => console.error("Error cargando rutinas:", error));
+  }, []);
+
   return (
     <div className="home-container">
 
       {/* Sección 1: Título y subtítulo */}
       <div className="home-welcome">
-      <h1 className="home-title">
+        <h1 className="home-title">
           <Link to="/explore" className="home-title-link">Bienvenido a FitTrack</Link>
         </h1>
-
         <p className="home-subtitle">
           Tu guía para mejorar tu salud, alimentación y entrenamientos.
         </p>
@@ -50,7 +58,22 @@ function Home() {
         </div>
       </div>
 
-      {/* Sección 4: Historia */}
+      {/* Sección 4: Rutinas Recomendadas */}
+      <div className="home-routines">
+        <h2>Rutinas Recomendadas</h2>
+        <div className="routines-list">
+          {routines.map((routine) => (
+            <RoutineCard
+              key={routine.id}
+              title={routine.title}
+              image={routine.image}
+              description={routine.description}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Sección 5: Historia */}
       <div className="home-history">
         <h2>Nuestra Historia</h2>
         <p>
@@ -58,9 +81,9 @@ function Home() {
           bienestar físico y mental a través del ejercicio y la alimentación.
         </p>
       </div>
+
     </div>
   );
 }
 
 export default Home;
-
