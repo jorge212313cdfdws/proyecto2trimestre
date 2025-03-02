@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../../components/header/Header";
 import "./Diets.css";
+import Footer from "../../components/footer/Footer"; 
 
 function Diets() {
   const [goal, setGoal] = useState("gain");
@@ -47,6 +48,7 @@ function Diets() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

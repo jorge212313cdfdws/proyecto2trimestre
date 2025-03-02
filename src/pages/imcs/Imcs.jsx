@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Imcs.css";
 import Header from "../../components/header/Header";
-
+import Footer from "../../components/footer/Footer";
 
 
 function Imcs() {
@@ -81,6 +81,7 @@ function Imcs() {
         </div>
       )}
     </div>
+    <Footer />
     </>
   );
 }

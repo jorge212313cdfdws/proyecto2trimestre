@@ -1,7 +1,7 @@
 import React from "react";
-import "./RoutineCard.css";
+import "./RoutineCard.css"; // Si quieres darle estilo aparte
 
-const RoutineCard = ({ title, image, description }) => {
+function RoutineCard({ title, image, description }) {
   return (
     <div className="routine-card">
       <img src={image} alt={title} className="routine-image" />
@@ -9,6 +9,6 @@ const RoutineCard = ({ title, image, description }) => {
       <p>{description}</p>
     </div>
   );
-};
+}
 
 export default RoutineCard;

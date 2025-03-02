@@ -1,7 +1,7 @@
 import React from "react";
 import "./Workouts.css";
 import Header from "../../components/header/Header";
-
+import Footer from "../../components/footer/Footer";
 
 // Importa las imágenes desde la carpeta assets/images
 import BenchPressImg from "../../assets/images/bench-press.jpg";
@@ -83,6 +83,7 @@ function Workouts() {
         </div>
       </section>
     </div>
+    <Footer />
     </>
   );
 }

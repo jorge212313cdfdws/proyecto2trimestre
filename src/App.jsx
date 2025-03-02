@@ -5,6 +5,7 @@ import Diets from "./pages/diets/Diets";
 import Imcs from "./pages/imcs/Imcs";
 import Workouts from "./pages/workouts/Workouts";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/diets" element={<Diets />} />
         <Route path="/imcs" element={<Imcs />} />

@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Mejora tu salud",
+      "description": "El ejercicio ayuda a fortalecer tu corazón y mejorar la circulación.",
+      "image": "gym1"
+    },
+    {
+      "id": 2,
+      "title": "Aumenta tu energía",
+      "description": "Mantente activo y reduce el cansancio diario.",
+      "image": "gym2"
+    },
+    {
+      "id": 3,
+      "title": "Control de peso",
+      "description": "El entrenamiento regular ayuda a mantener un peso saludable.",
+      "image": "gym3"
+    }
+  ]
+  
