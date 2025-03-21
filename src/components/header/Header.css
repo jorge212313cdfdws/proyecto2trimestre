@@ -13,12 +13,10 @@
   z-index: 1000;
 }
 
-/* Logo a la izquierda */
 .header-left {
   flex: 1;
 }
 
-/* Estilo del logo */
 .logo {
   color: white;
   font-size: 20px;
@@ -26,7 +24,6 @@
   text-decoration: none;
 }
 
-/* Centrar el menú */
 .header-center {
   flex: 2;
   display: flex;
@@ -45,14 +42,12 @@
   font-size: 16px;
 }
 
-/* Bloque derecho con botón de menú hamburguesa */
 .header-right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
-/* Ocultar el menú hamburguesa en pantallas grandes */
 .menu-button {
   display: none;
   background: none;
@@ -62,7 +57,6 @@
   cursor: pointer;
 }
 
-/* Para pantallas pequeñas */
 @media (max-width: 768px) {
   .header-center {
     display: none;

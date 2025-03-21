@@ -11,27 +11,35 @@ function Header() {
     i18n.changeLanguage(lng);
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
-      {/* Bloque Izquierdo (Logo) */}
       <div className="header-left">
         <Link to="/" className="logo">FitTrack</Link>
       </div>
 
-      {/* Bloque Central (Links de Navegación) */}
       <nav className={`header-center ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><Link to="/home">{i18n.t("home")}</Link></li>
-          <li><Link to="/explore">{i18n.t("explore")}</Link></li>
-          <li><Link to="/diets">{i18n.t("diets")}</Link></li>
-          <li><Link to="/workouts">{i18n.t("workouts")}</Link></li>
-          <li><Link to="/imcs">{i18n.t("imc")}</Link></li>
+          <li><Link to="/home" onClick={closeMenu}>{i18n.t("home")}</Link></li>
+          <li><Link to="/explore" onClick={closeMenu}>{i18n.t("explore")}</Link></li>
+          <li><Link to="/diets" onClick={closeMenu}>{i18n.t("diets")}</Link></li>
+          <li><Link to="/workouts" onClick={closeMenu}>{i18n.t("workouts")}</Link></li>
+          <li><Link to="/imcs" onClick={closeMenu}>{i18n.t("imc")}</Link></li>
+          <li><Link to="/usuarios" onClick={closeMenu}>{i18n.t("users")}</Link></li>
         </ul>
       </nav>
 
-      {/* Bloque Derecho (Menú Hamburguesa y Selector de Idioma) */}
       <div className="header-right">
-        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
+        <button className="menu-button" onClick={toggleMenu}>
+          ☰
+        </button>
         <div className="language-buttons">
           <button onClick={() => changeLanguage('es')}>ES</button>
           <button onClick={() => changeLanguage('en')}>EN</button>
