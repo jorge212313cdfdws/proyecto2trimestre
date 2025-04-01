@@ -4,7 +4,7 @@ import Explore from "./pages/explore/Explore";
 import Diets from "./pages/diets/Diets";
 import Imcs from "./pages/imcs/Imcs";
 import Workouts from "./pages/workouts/Workouts";
-import UsuariosList from "./components/UsuariosList";
+
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
