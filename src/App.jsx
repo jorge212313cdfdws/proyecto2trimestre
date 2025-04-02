@@ -4,7 +4,6 @@ import Explore from "./pages/explore/Explore";
 import Diets from "./pages/diets/Diets";
 import Imcs from "./pages/imcs/Imcs";
 import Workouts from "./pages/workouts/Workouts";
-
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -17,7 +16,7 @@ function Layout() {
 
   return (
     <>
-      {!hideHeaderFooter && <Header />} 
+      {!hideHeaderFooter && <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -25,12 +24,11 @@ function Layout() {
         <Route path="/diets" element={<Diets />} />
         <Route path="/imcs" element={<Imcs />} />
         <Route path="/workouts" element={<Workouts />} />
-        <Route path="/usuarios" element={<UsuariosList />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/questionnaire" element={<Questionnaire />} />
         <Route path="/rss" element={<RSSPage />} />
       </Routes>
-      {!hideHeaderFooter && <Footer />} 
+      {!hideHeaderFooter && <Footer />}
     </>
   );
 }
