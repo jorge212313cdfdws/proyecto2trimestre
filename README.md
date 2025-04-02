@@ -43,6 +43,7 @@ Aquí algunos enlaces de referencia utilizados en el desarrollo:
 - [Leaflet Documentation](https://leafletjs.com/)
 - [i18n React Guide](https://react.i18next.com/)
 - [Flexbox y CSS Grid](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Link Página web desde firebase](https://fittrack-36494.web.app/home/)
 
 ## 📌 Páginas y navegación
 La aplicación cuenta con **tres páginas principales**:

@@ -16,7 +16,7 @@ function Layout() {
 
   return (
     <>
-      {!hideHeaderFooter && <Header />} 
+      {!hideHeaderFooter && <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -28,7 +28,7 @@ function Layout() {
         <Route path="/questionnaire" element={<Questionnaire />} />
         <Route path="/rss" element={<RSSPage />} />
       </Routes>
-      {!hideHeaderFooter && <Footer />} 
+      {!hideHeaderFooter && <Footer />}
     </>
   );
 }
