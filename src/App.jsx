@@ -4,7 +4,6 @@ import Explore from "./pages/explore/Explore";
 import Diets from "./pages/diets/Diets";
 import Imcs from "./pages/imcs/Imcs";
 import Workouts from "./pages/workouts/Workouts";
-import UsuariosList from "./components/UsuariosList";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -13,7 +12,7 @@ import RSSPage from "./pages/rss/RSSPage";
 
 function Layout() {
   const location = useLocation();
-  const hideHeaderFooter = location.pathname === "/" || location.pathname === "/home"; // Ocultar en Home
+  const hideHeaderFooter = location.pathname === "/" || location.pathname === "/home"; 
 
   return (
     <>
@@ -25,7 +24,6 @@ function Layout() {
         <Route path="/diets" element={<Diets />} />
         <Route path="/imcs" element={<Imcs />} />
         <Route path="/workouts" element={<Workouts />} />
-        <Route path="/usuarios" element={<UsuariosList />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/questionnaire" element={<Questionnaire />} />
         <Route path="/rss" element={<RSSPage />} />
