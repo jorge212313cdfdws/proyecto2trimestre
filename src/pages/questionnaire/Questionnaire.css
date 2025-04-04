@@ -1,45 +1,109 @@
+/* Contenedor principal */
 .questionnaire {
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .questionnaire h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .questionnaire form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .questionnaire label {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .questionnaire input {
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .questionnaire button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .questionnaire button:hover {
-    background-color: #0056b3;
-  }
-  
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+input:focus {
+  outline: 2px solid #ff9800;
+  border-color: #ff9800;
+}
+.questionnaire h1 {
+  text-align: center;
+}
+
+/* Botón de Enviar */
+.submit-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #e68900;
+}
+
+/* Lista de usuarios */
+.user-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Cada usuario */
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Texto del usuario */
+.user-item span {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* Botones */
+.button-group {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 4px 6px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Botón Editar */
+.edit-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #45a049;
+}
+
+/* Botón Eliminar */
+.delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}

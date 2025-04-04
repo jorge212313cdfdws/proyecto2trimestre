@@ -27,12 +27,11 @@ function Header() {
 
       <nav className={`header-center ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><Link to="/home" onClick={closeMenu}>{i18n.t("home")}</Link></li>
-          <li><Link to="/explore" onClick={closeMenu}>{i18n.t("explore")}</Link></li>
-          <li><Link to="/diets" onClick={closeMenu}>{i18n.t("diets")}</Link></li>
-          <li><Link to="/workouts" onClick={closeMenu}>{i18n.t("workouts")}</Link></li>
-          <li><Link to="/imcs" onClick={closeMenu}>{i18n.t("imc")}</Link></li>
-          <li><Link to="/usuarios" onClick={closeMenu}>{i18n.t("users")}</Link></li>
+          <li><Link to="/home" onClick={closeMenu}>{i18n.t("Home")}</Link></li>
+          <li><Link to="/explore" onClick={closeMenu}>{i18n.t("Explore")}</Link></li>
+          <li><Link to="/diets" onClick={closeMenu}>{i18n.t("Diets")}</Link></li>
+          <li><Link to="/workouts" onClick={closeMenu}>{i18n.t("Workouts")}</Link></li>
+          <li><Link to="/imcs" onClick={closeMenu}>{i18n.t("Imc")}</Link></li>
           <li><Link to="/questionnaire" onClick={closeMenu}>Cuestionario</Link></li>
           <li><Link to="/rss"onClick={closeMenu}>RSS</Link></li>
 

@@ -1,0 +1,73 @@
+/* Ajustar margen superior para que no se solape con el header */
+.rss-container {
+    max-width: 800px;
+    margin: 80px auto 0; /* Añade margen arriba para separar del header */
+    padding: 20px;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  
+  /* Título principal */
+  .rss-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff9800;
+  }
+  
+  /* Descripción */
+  .rss-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  /* Lista de noticias */
+  .rss-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Estilo de cada enlace */
+  .rss-list li {
+    background: #333;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .rss-list li:hover {
+    background: #444;
+  }
+  
+  .rss-list a {
+    text-decoration: none;
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .rss-list a:hover {
+    color: #ffc107;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 600px) {
+    .rss-title {
+      font-size: 24px;
+    }
+    
+    .rss-list a {
+      font-size: 14px;
+    }
+  }
+  
